@@ -1,63 +1,63 @@
-# Rare-Event ML Classification in Noisy, Imbalanced Data
+# Rare-Event Detection with Machine Learning in Noisy, Imbalanced Data
 
 ## Overview
-This project demonstrates an end-to-end machine learning pipeline for detecting rare signals in noisy, highly imbalanced datasets. It is inspired by workflows where synthetic events are generated, signal and background classes are simulated, simple rule-based selections are benchmarked, and machine learning models are used to improve classification performance.
+This project implements an end-to-end machine learning pipeline for detecting rare signals in noisy and highly imbalanced datasets. It is inspired by simulation-driven workflows where signal and background events are generated, baseline selections are applied, and machine learning models are used to improve classification performance.
 
-The goal is to show practical skills in:
-- simulation-driven analytics
+The goal is to demonstrate practical skills in:
+- simulation-driven data analysis
 - feature engineering
 - imbalanced classification
 - model comparison
-- evaluation with both ML metrics and significance-style measures
+- domain-aware evaluation
+
+---
 
 ## Motivation
-Many real-world classification tasks involve subtle signals hidden inside dominant background noise. This project reproduces that setting with synthetic collider-inspired observables and compares:
-- a baseline cut-based strategy
-- XGBoost
-- a neural network classifier
+Many real-world problems involve detecting weak signals embedded in large background noise. This project reproduces that setting and compares:
+
+- a baseline cut-based selection
+- XGBoost classifier
+- Neural network classifier
+
+---
 
 ## Methods
-- Synthetic rare-event data generation
-- Train/validation/test split
-- Feature scaling
-- Baseline cut-based selection
-- XGBoost classifier
-- MLP neural network classifier
-- Evaluation with ROC-AUC, F1-score, precision, recall
-- Significance-style scan using \( S/\sqrt{B} \)
 
-## Repository Structure
-- `src/data_generation.py` : synthetic event generation
-- `src/preprocess.py` : train/test split and scaling
-- `src/train_models.py` : baseline + ML models
-- `src/evaluate.py` : metrics, significance scan, plots
-- `main.py` : runs the full pipeline
-
-## Example Features
-The synthetic dataset includes collider-inspired variables such as:
-- transverse momentum-like observables
+### Data
+Synthetic dataset with signal vs background classes using collider-inspired observables:
+- transverse momentum-like variables
 - missing-energy-like variable
 - invariant-mass-like variable
 - angular separation
-- event activity
-- jet substructure-inspired features
-- detector-response-inspired energy fraction
+- event activity and jet-inspired features
 
-## Skills Demonstrated
-- Python
-- machine learning
-- feature engineering
-- imbalanced classification
-- evaluation and validation
-- simulation-driven data science
-- scientific and statistical reasoning
+### Models
+- Baseline: rule-based cut selection
+- XGBoost
+- Neural Network (MLP)
+
+### Evaluation
+- ROC-AUC
+- Precision, Recall, F1-score
+- Threshold-based sensitivity proxy inspired by signal/background analysis
+
+---
+
+## Sensitivity Proxy (Important Note)
+This project includes a simple threshold-based sensitivity proxy using signal and background yields for illustration purposes.
+
+This is **not a full statistical significance calculation**. In realistic analyses, discovery sensitivity depends on:
+- likelihood-based statistical treatment
+- systematic uncertainties
+- full event modeling
+
+Here, the proxy is used only to provide an intuitive comparison between models in a rare-event setting.
+
+---
 
 ## Results
-The ML models are expected to outperform the simple baseline selection in identifying rare signals under strong class imbalance. The project also shows how to compare models using both standard ML metrics and a significance-style metric relevant for rare-event detection.
+Machine learning models (XGBoost and neural network) outperform the baseline cut-based method in detecting rare signals in noisy, imbalanced data. The sensitivity proxy provides an additional comparison of model performance alongside standard ML metrics.
 
-## Future Extensions
-- hyperparameter optimization
-- SHAP-based explainability
-- calibration analysis
-- Keras/TensorFlow deep neural network
-- dashboard or lightweight app for model inspection
+---
+
+## Repository Structure
