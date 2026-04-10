@@ -60,6 +60,7 @@ The project compares a rule-based baseline with XGBoost, ANN, and CNN classifier
 - `src/train_models.py` : baseline, XGBoost, ANN, CNN
 - `src/evaluate.py` : evaluation, plots, sensitivity proxy
 - `main.py` : runs the full pipeline
+- - `results/`: saved figures and summary metrics generated after running the pipeline
 
 ## Skills Demonstrated
 - Python
