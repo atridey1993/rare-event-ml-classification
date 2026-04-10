@@ -61,6 +61,14 @@ The project compares a rule-based baseline with XGBoost, ANN, and CNN classifier
 - `src/evaluate.py` : evaluation, plots, sensitivity proxy
 - `main.py` : runs the full pipeline
 - - `results/`: saved figures and summary metrics generated after running the pipeline
+ 
+## Example Output
+
+### ROC Curve
+![ROC](results/roc_curves.png)
+
+### Sensitivity Comparison
+![Sensitivity](results/sensitivity_bars.png)
 
 ## Skills Demonstrated
 - Python
