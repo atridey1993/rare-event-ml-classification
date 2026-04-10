@@ -92,6 +92,12 @@ The project compares a rule-based baseline with XGBoost, ANN, and CNN classifier
 - Simulation-driven analytics
 - Statistical reasoning
 
+## Key Takeaways
+- Compared rule-based and ML-based approaches for rare-event detection
+- Built tabular and image-based classifiers
+- Evaluated models with standard ML metrics and a sensitivity-style proxy
+- Added model diagnostics through feature importance and SHAP
+
 ## Future Improvements
 - hyperparameter tuning
 - explainability (SHAP)
