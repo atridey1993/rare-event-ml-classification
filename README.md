@@ -61,3 +61,25 @@ Machine learning models (XGBoost and neural network) outperform the baseline cut
 ---
 
 ## Repository Structure
+src/ → data generation, preprocessing, training, evaluation
+main.py → runs full pipeline
+results/ → plots and metrics
+
+---
+
+## Skills Demonstrated
+- Python
+- Machine learning (XGBoost, neural networks)
+- Feature engineering
+- Imbalanced classification
+- Model evaluation
+- Simulation-driven analytics
+- Statistical reasoning
+
+---
+
+## Future Improvements
+- Hyperparameter tuning
+- Explainability (SHAP)
+- Deep neural networks
+- Deployment (API/dashboard)
