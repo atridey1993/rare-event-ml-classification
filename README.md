@@ -62,13 +62,22 @@ The project compares a rule-based baseline with XGBoost, ANN, and CNN classifier
 - `main.py` : runs the full pipeline
 - - `results/`: saved figures and summary metrics generated after running the pipeline
  
-## Example Output
+## Model Diagnostics
 
 ### ROC Curve
 ![ROC](results/roc_curves.png)
 
 ### Sensitivity Comparison
 ![Sensitivity](results/sensitivity_bars.png)
+
+### Confusion Matrix (XGBoost)
+![CM](results/cm_xgb.png)
+
+### Feature Importance
+![FI](results/feature_importance.png)
+
+### SHAP Explainability
+![SHAP](results/shap.png)
 
 ## Skills Demonstrated
 - Python
